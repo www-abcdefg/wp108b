@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  font-size: 16px;
+  margin: 0px;
+}
+label {
+  /* border: 1px solid black;
+  padding: 10px; */
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+button {
+  padding: 10px;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+.main {
+    margin: 20px;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+<div class="main">
+    <form>
+        <fieldset>
+          <legend>個人資料</legend>
+        <label for="username">帳號:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">密碼:</label><br>
+        <input type="password" id="pwd" name="pwd"><br/>
+      
+        <label>血型</label><br>
+      <select id="cars" name="cars">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select><br/>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="Chinese name">Chinese name:</label><br>
+        <input type="text" id="Chinese name" name="Chinese name" value=""><br><br>
+        <label for="cellphone">cellphone:</label><br>
+        <input type="text" id="cellphonee" name="cellphone" value=""><br>
+        <label for="address">address:</label><br>
+        <input type="text" id="address" name="address" value=""><br>
+      </form> 
+      <input type="radio" id="男" name="gender" value="男">
+      <label for="男">男</label><br>
+      <input type="radio" id="女" name="gender" value="女">
+      <label for="女">女</label><br>
+      <input type="radio" id="其他" name="gender" value="其他"">
+      <label for="其他">其他</label><br><br>
+        <label for="birthday">生日:</label><br/>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <label>興趣:</label><br/>
+        <input type="radio" id="打球" name="gender" value="打球">
+        <label for="打球">打球</label><br>
+        <input type="radio" id="聽歌" name="gender" value="聽歌">
+        <label for="聽歌">聽歌</label><br>
+        <input type="radio" id="看電影" name="gender" value="看電影">
+        <label for="看電影">看電影</label><br>
+        <input type="radio" id="玩電腦" name="gender" value="玩電腦">
+        <label for="玩電腦">玩電腦</label><br>
+        <input type="radio" id="其他" name="gender" value="其他"">
+        <label for="其他">其他</label><br><br>
+        <label>留言:</label><br/>
+      <textarea name="message">
+      
+      </textarea>
+      <br/><br/>
+          <button>提交</button><br/><br/>
+        </fieldset>
+      </form>      
+</div>
+
+</body>
+</html>
