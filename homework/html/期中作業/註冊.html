@@ -114,6 +114,36 @@ body {
     padding-right: 5%;
     padding-left: 5%;
 }
+* {
+  font-size: 16px;
+  margin: 0px;
+}
+label {
+  /* border: 1px solid black;
+  padding: 10px; */
+}
+textarea {
+  width: 100%;
+  height: 100px;
+}
+button {
+  padding: 10px;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+}
+input {
+  padding: 6px;
+  font-size: 16px;
+}
+
+input, textarea, button {
+  border-radius: 5px;
+}
+
+.main {
+    margin: 20px;
+    padding: 10px;
+}
 </style>
 </head>
 <body>
@@ -147,42 +177,65 @@ body {
     </div>
   </div> 
 </div>
-<div class="intro">
-    <div>
-        <img src="柯泓吉.jpg"alt="柯泓吉的照片" >
-    </div>
-    <div>
-      <table style="width:50%">
-      <tr>
-          <th>姓名:</th>
-          <th>柯泓吉</th>
-      </tr>
-      <tr>
-        <th>性別:</th>
-        <th>男</th>
-    </tr>
-      <tr>
-          <th>出生/年/月/日:</th>
-          <th>2001/02/06</th>
-      </tr>
-      <tr>
-          <th>信箱:</th>
-          <th>k5855877@gmail.com</th>
-      </tr>
-      <tr>
-          <th>電話:</th>
-          <th>0939901318</th>
-      </tr>
-      <tr>
-          <th>就讀學校/校系:</th>
-          <th><a href="https://www.nqu.edu.tw/educsie/index.php">金門大學資工系</a></th>
-      </tr>
-      <tr>
-          <th>Facebook:</th>
-          <th><a href="https://www.facebook.com/profile.php?id=100004364914963">柯泓吉的FB</a></th>
-      </tr>
-      </table>
-    </div>
-  </div>
+<div class="main">
+    <form>
+        <fieldset>
+          <legend>個人資料</legend>
+        <label for="username">帳號:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">密碼:</label><br>
+        <input type="password" id="pwd" name="pwd"><br/>
+        <input type='password' name='password' id='password' placeholder='請輸入密碼' required='required'>
+        <h3>確認密碼</h3>
+        <input type='password' id='password2' placeholder='請再次確認您的密碼' required='required'>
+        <div class='checkpass'>密碼不相符請重新輸入</div>
+        <label>血型</label><br>
+      <select id="cars" name="cars">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select><br/>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="Chinese name">Chinese name:</label><br>
+        <input type="text" id="Chinese name" name="Chinese name" value=""><br><br>
+        <label for="cellphone">cellphone:</label><br>
+        <input type="text" id="cellphonee" name="cellphone" value=""><br>
+        <label for="address">address:</label><br>
+        <input type="text" id="address" name="address" value=""><br>
+      </form> 
+      <input type="radio" id="男" name="gender" value="男">
+      <label for="男">男</label><br>
+      <input type="radio" id="女" name="gender" value="女">
+      <label for="女">女</label><br>
+      <input type="radio" id="其他" name="gender" value="其他"">
+      <label for="其他">其他</label><br><br>
+        <label for="birthday">生日:</label><br/>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <label>興趣:</label><br/>
+        <input type="radio" id="打球" name="gender" value="打球">
+        <label for="打球">打球</label><br>
+        <input type="radio" id="聽歌" name="gender" value="聽歌">
+        <label for="聽歌">聽歌</label><br>
+        <input type="radio" id="看電影" name="gender" value="看電影">
+        <label for="看電影">看電影</label><br>
+        <input type="radio" id="玩電腦" name="gender" value="玩電腦">
+        <label for="玩電腦">玩電腦</label><br>
+        <input type="radio" id="其他" name="gender" value="其他"">
+        <label for="其他">其他</label><br><br>
+        <label>留言:</label><br/>
+      <textarea name="message">
+      
+      </textarea>
+      <br/><br/>
+          <button>提交</button><br/><br/>
+        </fieldset>
+      </form>      
+</div>
 </body>
 </html>

@@ -112,17 +112,28 @@ body {
   </script>
 <div class="navbar">
   <a href="https://www-abcdefg.github.io/wp108b/homework/html/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/Midterm.html">首頁</a>
+  <a href="#news" style="float: right;">登入</a>
+  <a href="#news" style="float: right;">註冊</a>
   <div class="dropdown">
     <button class="dropbtn">自我介紹 
       <i class="caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="https://www-abcdefg.github.io/wp108b/homework/html/%E6%9C%9F%E4%B8%AD%E4%BD%9C%E6%A5%AD/%E5%AE%B6%E5%BA%AD%E8%83%8C%E6%99%AF.html">家庭背景</a>
-      <a href="#">家庭成員</a>
+      <a href="#">興趣</a>
     </div>
   </div> 
 </div>
-<h3 style="text-align:center;"><b>興趣</b></h3>
-
+<div class='div_login'>
+    <form action='connect.php' class='login' method='post'>
+        <i class='fas fa-user-circle' style='font-size:100px'></i>
+        <h2>使用者名稱</h2>
+        <input type='text' name='username' placeholder='請輸入您的使用者名稱' required='required'>
+        <h2>密碼</h2>
+        <input type='password' name='password' placeholder='請輸入密碼' required='required'>
+        <button type='submit' class='btn btn-secondary btn-lg btn-radius'>登入</button>
+        <br>
+    </form>
+</div>
 </body>
 </html>
