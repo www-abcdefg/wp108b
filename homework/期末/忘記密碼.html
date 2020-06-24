@@ -11,12 +11,12 @@
       </div>
       <div class="navbar" style="float:right">
         <div class="dropdown">
-          <button class="dropbtn">
-            <i class="fa fa-user"></i>
-            <i class="fa fa-caret-down"></i>
-          </button>
+        <button class="dropbtn">
+                <i class="fa fa-user"></i>
+                <i class="fa fa-caret-down"></i>
+              </button>
           <div class="dropdown-content">
-            <a href="https://www-abcdefg.github.io/wp108b/homework/%E6%9C%9F%E6%9C%AB/%E7%99%BB%E5%85%A5.html">登入</a>
+            <a href="#login">登入</a>
             <a href="#logout">登出</a>
             <a href="#signup">註冊</a>
           </div>
@@ -41,11 +41,26 @@
     
     <footer>
     </footer>
-    <script src="Shop.js"></script>
-    <script src="Pos.js"></script>
-    <script src="Report.js"></script>
-    <script src="Setting.js"></script>
-    <script src="Lib.js"></script>
-    <script src="Ui.js"></script>
+
     </body>
     </html>
+  <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+  </div>
+  <h1 style="text-align:center;"><b>忘記密碼</b></h1>
+  <P style="text-align:center;">請輸入您的使用者名稱 信箱(e-mail) 以及身分證來證明您的帳號以方便修改密碼</P>
+  <h2>使用者名稱</h2>
+  <input type='text' name='username' placeholder='請輸入您的使用者名稱' required='required'><br><!--文字輸入欄-->
+  <label for="e-mail">e-mail:</label><br>
+  <input type="e-mail" id="e-mail" name="e-mail"><br>
+  <label for="身分證">身分證:</label><br>
+  <input type="身分證" id="身分證" name="身分證"><br>
+  <button><a href="" style="float: right;">提交</a></button><br/><br/>
+  </body>
+  </html>
