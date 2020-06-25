@@ -19,7 +19,7 @@ const Pos = {
       <td>
       <img id="image" src="72小時.png"alt="電影照片" >
       </td>
-      <td><input id="price" type="number" value="0"></td>
+      <td><input id="price" value="0"></td>
       <td>
         <input id="quantity" type="number" value="1">
         <button onclick="Pos.addItem()">新增</button>
