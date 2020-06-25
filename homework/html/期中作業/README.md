@@ -9,4 +9,4 @@
 (功能表：https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)
 (表格:https://www.w3schools.com/html/html_tables.asp)
 * 2.註冊、登入跟修改密碼忘記密碼是利用w3school的html去做修改的(參考網址:https://www.w3schools.com/html/html_forms.asp)
-* 3.對這個編譯器原始碼我大部分可以理解,html、css的部分都能絕大部分理解
+* 3.對這個編譯器原始碼我大部分可以理解
