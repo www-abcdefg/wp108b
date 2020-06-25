@@ -34,7 +34,7 @@ const Pos = {
   <br/>
   <div>
     <label>總價:</label>
-    <input id="totalPrice" type="number" value="0">
+    <input id="totalPrice" value="0">
     <button id="submit" onclick="Pos.submit()">送出訂單</button>
     <button id="abort" onclick="Pos.abort()">放棄訂單</button>
     <br/><br/>
@@ -48,7 +48,7 @@ const Pos = {
   
   Pos.goShop = function () {
     if (!Order.submitted) {
-      if (confirm('訂單尚未送出，請問是否需要放棄此訂單？')) {
+      if (confirm('訂單尚未送出，請問是否需要放棄此訂單,並且清空？')) {
         Shop.start()
         return
       } else {
@@ -128,6 +128,7 @@ const Pos = {
     let {item, addon, price} = Pos.calcPrice()
     let quantity = parseInt(Ui.id('quantity').value)
     let record = {name: item+'('+addon+')', price: price, quantity: quantity}
+
     Order.records.push(record)
     Ui.id('orderTableBody').innerHTML = Pos.list()
     Order.totalPrice += price * quantity
