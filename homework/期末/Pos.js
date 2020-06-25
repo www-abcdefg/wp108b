@@ -113,7 +113,7 @@ const Pos = {
   
   Pos.calcPrice = function () {
     var a = document.getElementById("items").value;
-    if(a=="72小時前哨救援:240"){document.getElementById("image").src = "72小時.png";}
+    if(a=="72小時前哨救援:240"){document.getElementById("image").src = "72小時.png";}//設一個id讓圖片能找到位子能去替換
     if(a=="1/2的魔法:240"){document.getElementById("image").src = "魔法.png";}
     if(a=="深海擴散:240"){document.getElementById("image").src = "深海.png";}
     if(a=="明信片謀殺案:240"){document.getElementById("image").src = "明信片謀殺案.png";}
